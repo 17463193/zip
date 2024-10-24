@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budgeting App</title>
+    <link rel="stylesheet" href="/css/manage.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Personal Budgeting</h2>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/manage-income-expenses">Income/Expenses</a>
+        <a href="/reports">Reports</a>
+        <a href="/login">Logout</a>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>Monthly Income and Expenses</h1>    
+        </div>
+        
+        <button class="btn" id="addExpenseBtn">Add New</button>
+
+        <table id="expensesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expenses will be populated here dynamically -->
+            </tbody>
+        </table>
+
+       <!-- Modal for adding/editing expenses -->
+<div id="expenseModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">Add Items</h2>
+        <form id="expenseForm">
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="date" id="date" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

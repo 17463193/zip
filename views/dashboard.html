@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Personal Budgeting</h2>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/manage-income-expenses">Income/Expenses</a>
+        <a href="/reports">Reports</a>
+        <a href="/login">Logout</a>
+    </div>
+    <div class="container">
+        <div class='navbar'>
+            <div class="scrolling-container">
+                <h2 class="scrolling-text">Personal Budgeting App</h2>
+            </div>
+        </div>
+        <div id="notification" class="notification hidden"></div>
+        <div class="card-container">
+            <div class="card" id="totalIncomeCard">
+                <h3>Total Income</h3>
+                <p id="totalIncome">0</p>
+            </div>
+            <div class="card" id="totalExpensesCard">
+                <h3>Total Expenses</h3>
+                <p id="totalExpenses">0</p>
+            </div>
+            <div class="card" id="totalBudgetsCard">
+                <h3>Total Budgets</h3>
+                <p id="totalBudgets">0</p>
+            </div>
+        </div>
+        <!-- Table container -->
+        <div class="table-container">
+            <h2>Monthly Income & Expenses Info</h2>
+            <table id="incomeExpenseTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Income</th>
+                        <th>Expense</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

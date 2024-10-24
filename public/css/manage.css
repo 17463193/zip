@@ -1,0 +1,171 @@
+/* manage.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    color: #0a0a0a;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2caa7a;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.sidebar a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: block;
+    transition: padding-left 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    padding-left: 20px;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    padding: 30px;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #2caa7a;
+    text-align: center;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2caa7a;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+}
+
+table thead {
+    background-color: #2caa7a;
+    color: #f3f3f3;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal-content {
+    background-color: #f3f3f3;
+    padding: 20px;
+    width: 400px; /* Fixed width */
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    position: relative; /* Position relative to allow for absolute positioning of the close button */
+    margin: auto; /* Center the modal-content */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2caa7a;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #333;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

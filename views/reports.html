@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+    <link rel="stylesheet" href="css/reports.css"> <!-- Link to your CSS if needed -->
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Personal Budgeting</h2>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/manage-income-expenses">Income/Expenses</a>
+        <a href="/reports">Reports</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="container">
+        <h1>Generate Monthly Report</h1>    
+
+        <!-- Date Filter -->
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" required>
+        
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" required>
+    
+        <button id="generateReportBtn">Generate Report</button>
+    
+        <table id="reportTable">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Total Income</th>
+                    <th>Total Expenses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Monthly report data will be populated here -->
+            </tbody>
+        </table>  
+    </div>
+
+    <script src="/js/reports.js"></script> <!-- Link to JS -->
+</body>
+</html>

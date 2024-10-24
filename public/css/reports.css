@@ -1,0 +1,161 @@
+/* reports.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    color: #0a0a0a;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2caa7a;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.sidebar a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: block;
+    transition: padding-left 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    padding-left: 20px;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    padding: 30px;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #f3f3f3;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #2caa7a;
+    text-align: center;
+}
+
+/* Button */
+#generateReportBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2caa7a;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateReportBtn:hover {
+    background-color: #333;
+}
+
+/* Input Fields */
+label {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+input[type="date"] {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+}
+
+table thead {
+    background-color: #2caa7a;
+    color: #f3f3f3;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+table tr:hover {
+    background-color: #dddddd;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a0a0a;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
